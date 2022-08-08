@@ -1,0 +1,91 @@
+.motivation {
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 60px;
+  @media screen and (min-width: $desktop) {
+  padding-bottom: 40px;
+  }
+
+&__box {
+display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+&__title {
+  font-weight: $font-weight-bold;
+  line-height: 1.04;
+  color: $title-text-color;
+  text-align: center;
+  @media screen and (max-width: $max-tablet){
+  margin-bottom: 20px;
+  font-size: 36px;
+  }
+  @media screen and (min-width: $desktop) {
+  margin-bottom: 35px;
+  font-size: $font-size-title-h2;
+    }
+}
+
+&__text {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: #a60000;
+  font-weight: 700;
+  font-size: 22px;
+  font-style: cursive;
+  @media screen and (min-width: $tablet) and (max-width: $max-tablet) {
+  max-width: 420px;
+  }
+  @media screen and (min-width: $desktop) {
+  margin-bottom: 35px;
+  width: 590px;
+  }
+}
+
+&__btn {
+  margin-bottom: 30px;
+  color: $background-accent;
+  font-size: 18px;
+  border: 1px solid $background-accent;
+  background: linear-gradient(0.25turn, #0077e6, #a5038d);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  transition: 400ms $transition-timing-function;
+&:hover,
+&:focus {
+  color: $white-button-color;
+  box-shadow: $box-shadow-button;
+  transform: scale(1.2);
+}
+.btn__style {
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+ }
+ .btn__style:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+ }
+ &:hover .btn__style {
+  padding-right: 25px;
+ }
+ &:hover .btn__style:after {
+  opacity: 1;
+  right: 0;
+ }
+}
+}
+
+.motivation__image {
+  width: 100%;
+  height: 100%;
+}

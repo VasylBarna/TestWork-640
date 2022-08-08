@@ -1,0 +1,123 @@
+.main {
+    padding-top: 60px;
+    padding-bottom: 40px;
+    position: relative;
+    @media screen and (min-width: $tablet){
+    padding-top: 30px;
+    padding-bottom: 70px;
+    }
+    @media screen and (min-width: $desktop) {
+    padding-top: 50px;
+    padding-bottom: 70px;
+    }
+
+&__hero {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+&__content {
+    @media screen and (min-width: $tablet) and (max-width: $max-tablet){
+    width: 370px;
+    }
+    @media screen and (min-width: $desktop) {
+    width: 530px;
+    }
+}
+&__poster {
+    max-width: 525px;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 2.14;
+    color: $background-accent;
+    @media screen and (max-width: $max-mobile) {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    justify-content: flex-start;
+    }
+    @media screen and (min-width: $tablet) and (max-width: $max-tablet){
+    margin-bottom: 15px;
+    }
+    @media screen and (min-width: $desktop) {
+     margin-bottom: 62px;
+    }
+}
+
+&__title {
+   max-width: 525px;
+   font-weight: 700;
+   line-height: 1.13;
+   display: flex;
+   align-items: center;
+   color: $title-text-color;
+   @media screen and (max-width: $max-mobile) {
+   display: block;
+   text-align: center;
+   margin-bottom: 25px;
+   }
+   @media screen and (min-width: $tablet) and (max-width: $max-tablet){
+    margin-bottom: 15px;
+    font-size: 50px;
+    }
+    @media screen and (min-width: $desktop) {
+    margin-bottom: 35px;
+    font-size: 66px;
+    }
+}
+
+&__description {
+    max-width: 525px;
+    text-align: justify;
+    line-height: 1.5;
+    @media screen and (max-width: $max-tablet){
+    margin-bottom: 25px;
+    }
+        
+    @media screen and (min-width: $desktop) {
+    margin-bottom: 57px;
+    }
+}
+
+&__navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    flex-direction: row;
+    @media screen and (max-width: $max-mobile) {
+    justify-content: space-around;
+    align-items: flex-start;
+    }
+}
+
+&__box_image {
+    max-width: 530px;
+    height: 100%;
+    @media screen and (max-width: $max-mobile) {
+    display: none;
+    }
+    @media screen and (min-width: $tablet) and (max-width: $max-tablet) {
+    width: 45.5%;
+    }
+}
+
+&__mobile {
+    display: none;
+    @media screen and (max-width: $max-mobile) {
+    display: block;
+    margin-bottom: 25px;
+    }
+}
+
+&__revert {
+    @media screen and (max-width: $max-mobile) {
+    margin-bottom: 10px;
+}
+}
+}

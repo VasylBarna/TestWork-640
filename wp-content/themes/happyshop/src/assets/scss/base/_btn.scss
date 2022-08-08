@@ -1,0 +1,82 @@
+.btn, button, .add_to_cart_button {
+  padding-right: 25px;
+  padding-left: 25px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 123px;
+  font-family: $font-family-title;
+  font-style: normal;
+  font-weight: 500;
+  font-size: $font-size-btn;
+  line-height: 2.14;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  color: $white-button-color;
+  background-color: $background-button-color;
+  transition: color $transition-timing-function;
+}
+
+.btn__header {
+  color: $text-color;
+  background-color: inherit;
+  border: solid 1px;
+  border-color: $text-color;
+  &:hover,
+  &:focus {
+    color: $white-button-color;
+    background-color: $background-button-color;
+    border-color: $background-button-color;
+  }
+    @media screen and (max-width: $max-mobile) {
+    color: $primary-white-color;
+    background-color: $revert-color-button;
+    border-color: $primary-white-color;
+    &:hover,
+    &:focus {
+    background-color: $background-accent;
+    border-color: inherit;
+    color: $title-text-color;
+      }
+    }
+}
+
+.main__btn, button, .add_to_cart_button {
+  color: $background-accent;
+  border: 1px solid $background-accent;
+  background-color: #e32f2fbf;
+  font-weight: 700;
+  transition: 400ms $transition-timing-function;
+  &:hover,
+  &:focus {
+    color: $background-button-color;
+    background-color: $background-accent;
+    border: 1px solid $background-button-color;
+    box-shadow: $box-shadow-button;
+    
+  }
+ &:not(:last-child) {
+   @media screen and (max-width: $max-mobile) {
+     margin-bottom: 25px;
+   }
+}
+}
+
+.add_to_cart_button {
+  padding: 2px ;
+  width: fit-content;
+  font-size: 10px;
+  font-style: italic;
+  font-weight: 200;
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,48 @@
+.full_document {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1920px;
+    color: $text-color;
+    font-style: normal;
+    font-size: $font-size-body;
+    line-height: 1.87;
+    background-color: $primary-white-color;
+    text-decoration: none;
+      
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+
+    @media screen and (min-width: 480px) {
+        width: 480px;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 768px;
+    }
+
+    @media screen and (min-width: 1140px) {
+        width: 1140px;
+    }
+}
+
+@media screen and (max-width: $max-mobile) {
+    body.lock {
+        overflow: hidden;
+    }
+}
+
+  
+.woocommerce-products-header__title{
+    display:none;
+}
+  
+.page-title{
+display:none;
+}
+    

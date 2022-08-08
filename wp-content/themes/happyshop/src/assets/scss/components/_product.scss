@@ -1,0 +1,128 @@
+.product{
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  align-items: center;
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 40px;
+  padding-bottom: 50px;
+  align-items: center;
+}
+
+&__name  {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
+  font-size: $font-size-title-h2;
+  text-align: center;
+  align-items: center;
+  font-weight: $font-weight-bold;
+  color: $title-text-color;
+  @media screen and (max-width: $max-mobile) {
+  font-size: $mob-font-size-title-h2;
+ }
+}
+
+&__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: space-around;
+  justify-content: space-between;
+  @media screen and (min-width: $desktop) {
+  width: calc((100% - -136em)/4);
+  }   
+}
+
+&__item {
+  padding: 10px 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: baseline;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(127 87 112 / 21%);
+  border-right: 1px solid rgb(127 87 112 / 21%);
+  box-shadow: 0px 10px 15px rgb(127 87 112 / 21%);
+  @media screen and (min-width: $mobile) and (max-width: $max-mobile){   
+  width: 50%;
+  &:nth-child(2n) {
+  border-right: 0;
+  }
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: $max-tablet) {
+  width: 30%;
+  border-right: 1px solid rgb(127 87 112 / 21%);
+  &:nth-child(3n) {
+  border-right: 0;
+  }
+  }
+  @media screen and (min-width: $desktop) {
+  width: 20%;
+  border-right: 1px solid rgb(127 87 112 / 21%);;
+  &:nth-child(5n) {
+  border-right: 0;
+  }
+}
+}
+&__box {
+  position: relative;
+  height: 100%;
+  padding: 20px;
+}
+    
+&__title , .woocommerce-loop-product__title {
+  padding: 10px 5px;
+  display: block;
+  overflow: hidden;
+  font-size: 14px;
+  color: $title-text-color;
+  cursor: pointer;
+}
+
+&__title--data{
+  font-size: 12px;
+  font-style: italic;
+  color: $border-product;
+}
+
+&__price, .price {
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  font-size: 15px;
+  line-height: 1.46;
+  font-weight: 700;
+  color: #0C122D;
+    
+}
+
+&__link {
+  position: relative;
+  display: block;
+  height: 200px;
+  margin-bottom: 12px;
+  text-align: center;
+  cursor: pointer;
+}
+
+&__image {
+position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-height: 199px;
+  max-height: 200px;
+  min-width: 99%;
+  max-width: 100%;
+  vertical-align: middle;
+}
+}
+
